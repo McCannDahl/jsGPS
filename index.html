@@ -4,11 +4,13 @@
 
 <p>Click the button to get your coordinates.</p>
 
-<button onclick="getLocation()">Try It</button>
+Name: <input id="name" type="text" name="name"><br>
+<button onclick="getLocation()">Submit</button>
 
 <p id="demo"></p>
 
 <script>
+var name = document.getElementById("name");
 var x = document.getElementById("demo");
 
 function getLocation() {
